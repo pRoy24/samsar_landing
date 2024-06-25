@@ -1,10 +1,25 @@
 import React from 'react';
-
+import Head from 'next/head';
 import '../app/globals.css';
 
 export default function Home() {
   return (
     <div className="font-sans relative">
+      <Head>
+        <title>Samsar Motion Pictures</title>
+        <meta name="description" content="Unleash your creativity with AI-assisted video editor. Use Gen-AI natively to bring ideas to life." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+        <meta property="og:title" content="Samsar Motion Pictures" />
+        <meta property="og:description" content="Unleash your creativity with AI-assisted video editor. Use Gen-AI natively to bring ideas to life." />
+        <meta property="og:image" content="/social-preview.png" />
+        <meta property="og:url" content="https://samsar.one" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Samsar Motion Pictures" />
+        <meta name="twitter:description" content="Unleash your creativity with AI-assisted video editor. Use Gen-AI natively to bring ideas to life." />
+        <meta name="twitter:image" content="/social-preview.png" />
+      </Head>
+
       {/* Background video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
@@ -17,7 +32,7 @@ export default function Home() {
       <header className="relative bg-gray-900 bg-opacity-50 text-white p-6">
         <div className="container mx-auto flex justify-between items-center">
           <a href="/" className=''>
-            <img src='/one.png' className='h-[50px] mt-[-10px]' />
+            <img src='/one.png' className='h-[50px] mt-[-10px]' alt="Samsar One Logo" />
           </a>
           <nav className="space-x-4">
             <a href="https://github.com/pRoy24/samsar" target='_blank' className="hover:text-gray-400">Github</a>
@@ -40,30 +55,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative w-full ">
-
+      <section className="relative w-full">
         <div className="container-fluid mx-auto text-center">
-          <div className='w-full  bg-neutral-200 pt-8 pb-8 opacity-80'>
+          <div className='w-full bg-neutral-200 pt-8 pb-8 opacity-80'>
             <h2 className="text-4xl font-bold mb-6 text-neutral-800">Use Gen-AI natively to bring ideas to life.</h2>
             <p className="text-xl mb-6 text-neutral-900">Choose from the best models that fit your task.</p>
           </div>
-          <div className='pt-16 pb-16 '>
+          <div className='pt-16 pb-16'>
             <div className='container mx-auto'>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-gray-600 p-6 rounded shadow">
                   <video className="w-full mt-4" controls>
                     <source src="https://samsar-resources.s3.us-west-2.amazonaws.com/video-667636c24e15b655603c3519+(6).mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
-
-                <div className="bg-gray-600  p-6 rounded shadow">
+                <div className="bg-gray-600 p-6 rounded shadow">
                   <video className="w-full mt-4" controls>
                     <source src="https://samsar-resources.s3.us-west-2.amazonaws.com/lock_in.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
-
                 <div className="bg-gray-600 p-6 rounded shadow">
                   <video className="w-full mt-4" controls>
                     <source src="https://samsar-resources.s3.us-west-2.amazonaws.com/video-6676895b8f1a22aa57eefd43+(10).mp4" type="video/mp4" />
@@ -80,7 +92,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-stone-800">Samsar One</h2>
           <p className="text-xl mb-6">
-            Building the best ai-assist tools which allow you to
+            Building the best AI-assist tools which allow you to
             create and share your ideas with the world.
           </p>
           <a href="#" className="bg-blue-900 hover:bg-blue-600 text-white py-2 px-4 rounded">Follow us on social media.</a>
