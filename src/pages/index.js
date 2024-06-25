@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../app/globals.css';
+
 export default function Home() {
   return (
     <div className="font-sans relative">
@@ -15,14 +17,13 @@ export default function Home() {
       <header className="relative bg-gray-900 bg-opacity-50 text-white p-6">
         <div className="container mx-auto flex justify-between items-center">
           <a href="/" className=''>
-            <img src='/one.png' className='h-[50px] mt-[-10px]'/>
+            <img src='/one.png' className='h-[50px] mt-[-10px]' />
           </a>
           <nav className="space-x-4">
-            <a href="#" className="hover:text-gray-400">Github</a>
-            <a href="#" className="hover:text-gray-400">Pricing</a>
-            <a href="#" className="hover:text-gray-400">Company</a>
-            <a href="#" className="hover:text-gray-400">Log in</a>
-            <a href="#" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-blue-700 text-white py-2 px-4 rounded">
+            <a href="https://github.com/pRoy24/samsar" target='_blank' className="hover:text-gray-400">Github</a>
+            <a href="/pricing" className="hover:text-gray-400">Pricing</a>
+            <a href="https://app.samsar.one/" className="hover:text-gray-400">Log in</a>
+            <a href="https://app.samsar.one/" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-blue-700 text-white py-2 px-4 rounded">
               Sign-up for free
             </a>
           </nav>
@@ -32,9 +33,9 @@ export default function Home() {
       <section className="relative bg-gray-800 bg-opacity-50 text-white py-20">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold mb-8 md:mt-8">Samsar Motion Pictures</h1>
-          <p className="text-xl mb-8 mb-8">Unleash your creativity with AI assisted video editor.</p>
+          <p className="text-xl mb-8 mb-8">Unleash your creativity with AI-assisted video editor.</p>
           <div className='mt-16 mb-16 md:mb-32'>
-            <a href="#" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-neutral-900 text-white py-4 px-8 text-xl rounded">Go to App</a>
+            <a href="https://app.samsar.one/" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-neutral-900 text-white py-4 px-8 text-xl rounded">Go to App</a>
           </div>
         </div>
       </section>
@@ -90,9 +91,9 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <p>&copy; 2024 Samsar One.</p>
           <nav className="space-x-4">
-            <a href="#" className="hover:text-gray-400">Terms of Use</a>
-            <a href="#" className="hover:text-gray-400">Privacy Policy</a>
-            <a href="#" className="hover:text-gray-400">Code of Conduct</a>
+            <a href="/terms" className="hover:text-gray-400">Terms of Use</a>
+            <a href="/privacy" className="hover:text-gray-400">Privacy Policy</a>
+            <a href="/company" className="hover:text-gray-400">Company</a>
           </nav>
         </div>
       </footer>
