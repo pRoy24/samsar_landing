@@ -23,7 +23,7 @@ export default function Home() {
       {/* Background video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-        src="https://samsar-resources.s3.us-west-2.amazonaws.com/hyp_1.mp4"
+        src="https://dgyheyjs5bch6.cloudfront.net/hyp_1.mp4"
         autoPlay
         loop
         muted
@@ -37,10 +37,6 @@ export default function Home() {
           <nav className="space-x-4">
             <a href="https://github.com/pRoy24/samsar" target='_blank' className="hover:text-gray-400">Github</a>
             <a href="/pricing" className="hover:text-gray-400">Pricing</a>
-            <a href="https://app.samsar.one/" className="hover:text-gray-400">Log in</a>
-            <a href="https://app.samsar.one/" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-blue-700 text-white py-2 px-4 rounded">
-              Sign-up for free
-            </a>
           </nav>
         </div>
       </header>
@@ -66,19 +62,19 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-gray-600 p-6 rounded shadow">
                   <video className="w-full mt-4" controls>
-                    <source src="https://samsar-resources.s3.us-west-2.amazonaws.com/video-667636c24e15b655603c3519+(6).mp4" type="video/mp4" />
+                    <source src="https://dgyheyjs5bch6.cloudfront.net/neon_lts.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div className="bg-gray-600 p-6 rounded shadow">
                   <video className="w-full mt-4" controls>
-                    <source src="https://samsar-resources.s3.us-west-2.amazonaws.com/lock_in.mp4" type="video/mp4" />
+                    <source src="https://dgyheyjs5bch6.cloudfront.net/lock_in.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <div className="bg-gray-600 p-6 rounded shadow">
                   <video className="w-full mt-4" controls>
-                    <source src="https://samsar-resources.s3.us-west-2.amazonaws.com/video-6676895b8f1a22aa57eefd43+(10).mp4" type="video/mp4" />
+                    <source src="https://dgyheyjs5bch6.cloudfront.net/video-6676895b8f1a22aa57eefd43+(10).mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
