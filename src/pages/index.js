@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { FaTwitter, FaDiscord } from 'react-icons/fa';
 import '../app/globals.css';
 
 export default function Home() {
@@ -41,15 +42,24 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative bg-gray-800 bg-opacity-50 text-white py-20">
+      <section className="relative bg-gray-800 bg-opacity-50 text-white py-10">
         <div className="container mx-auto text-center">
           <h1 className="text-5xl font-bold mb-8 md:mt-8">Samsar Motion Pictures</h1>
-          <p className="text-xl mb-8 mb-8">Unleash your creativity with AI-assisted video editor.</p>
+          <p className="text-xl mt-8 mb-8">Unleash your creativity with AI-assisted video editor.</p>
           <div className='mt-16 mb-16 md:mb-32'>
-            <a href="https://app.samsar.one/" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-neutral-900 text-white py-4 px-8 text-xl rounded">Go to App</a>
+            <a href="https://app.samsar.one/" className="bg-gradient-to-r from-blue-900 to-neutral-900 hover:bg-neutral-600 text-white py-8 px-16 text-xl rounded">Go to Samsar Studio</a>
           </div>
+          <p className="text-md mt-8 mb-8">Just want to quickly create videos from text prompts?</p>
+          <div className='mt-4 mb-16 md:mb-32'>
+            <a href="https://app.samsar.one/quick_video" className="bg-gradient-to-r from-cyan-900 to-neutral-900 hover:bg-neutral-900 text-white py-4 px-16 text-xl rounded">Go to Quick Editor</a>
+          </div>
+
+          
         </div>
       </section>
+
+
+
 
       <section className="relative w-full">
         <div className="container-fluid mx-auto text-center">
@@ -91,7 +101,16 @@ export default function Home() {
             Building the best AI-assist tools which allow you to
             create and share your ideas with the world.
           </p>
-          <a href="#" className="bg-blue-900 hover:bg-blue-600 text-white py-2 px-4 rounded">Follow us on social media.</a>
+          <div>Follow us on social media.</div>
+          <div className="flex justify-center mt-4 space-x-6">
+            <a href="https://x.com/samsar_one" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+              <FaTwitter size={32} />
+            </a>
+            <a href="https://discord.gg/bEAv2Fb2" target="_blank" rel="noopener noreferrer" className="text-purple-500 hover:text-purple-700">
+              <FaDiscord size={32} />
+            </a>
+          </div>
+
         </div>
       </section>
 
