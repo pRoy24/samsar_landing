@@ -36,6 +36,7 @@ export default function Home() {
             <img src='/one.png' className='h-[50px] mt-[-10px]' alt="Samsar One Logo" />
           </a>
           <nav className="space-x-4">
+            <a href="https://blog.samsar.one/" target='_blank' className="hover:text-gray-400">Blog</a>
             <a href="https://github.com/pRoy24/samsar" target='_blank' className="hover:text-gray-400">Github</a>
             <a href="/pricing" className="hover:text-gray-400">Pricing</a>
           </nav>
